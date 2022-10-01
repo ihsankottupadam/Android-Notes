@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+		android:icon="@drawable/ic_edit_white"
+		android:id="@+id/ACTION_Edit"
+		android:title="Edit"
+		android:showAsAction="always"/>
+	<item
+		android:icon="@drawable/ic_more"
+		android:id="@+id/ACTION_MORE"
+		android:title="More"
+		android:showAsAction="always" >
+	<menu>
+      <item
+				android:id="@+id/ACTION_TOLIST"
+				android:title="Convert to checklist"/>
+		<item
+			android:id="@+id/ACTION_DELETE"
+			android:title="Delete"/>
+		<item
+			android:id="@+id/ACTION_SHARE"
+			android:title="Share"/>
+		<item
+			android:id="@+id/ACTION_SAVEASFILE"
+			android:title="Save as text file"/>
+		<item
+			android:id="@+id/ACTION_ADD_TO_CALENDER"
+			android:title="Add to calender"/>
+	</menu>
+    </item>
+</menu>

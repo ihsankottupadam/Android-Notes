@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id ="@+id/spinner"
+		android:showAsAction = "always"
+		android:actionViewClass = "android.widget.Spinner" />
+    <item
+		android:id="@+id/action_CancelEdit"
+		android:orderInCategory="100"
+		android:title="Cancel"
+		android:showAsAction="always"/>
+	<item
+		android:id="@+id/action_SaveEdit"
+		android:orderInCategory="100"
+		android:title="Save"
+		android:showAsAction="always"/>
+    
+</menu>

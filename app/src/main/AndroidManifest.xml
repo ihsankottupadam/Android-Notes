@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ihsan.notes">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ManageCat_Activity" />
+        <activity
+            android:name=".EditActivity"
+            android:label="Notes"
+            android:exported="true"
+            android:parentActivityName =".MainActivity">
+            <meta-data
+                android:name = "android.support.PARENT_ACTIVITY"
+                android:value = "com.ihsan.notes.MainActivity" />
+            <intent-filter>
+                <action android:name ="android.intent.action.SEND"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                <data android:mimeType ="text/plain" />
+            </intent-filter >
+        </activity>
+        <activity
+            android:name=".NoteDisplayActivity" />
+        <activity android:name=".Screen_activity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/FullScreen"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Preferences_Activity" />
+        <activity
+            android:name=".AboutActivity"/>
+    </application>
+
+</manifest>

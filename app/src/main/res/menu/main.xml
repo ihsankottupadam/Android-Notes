@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	<item
+		android:icon="@drawable/ic_plus"
+		android:id="@+id/ACTION_ADD_MEMMO"
+		android:title="Add"
+		android:showAsAction="always" />
+    <item
+		android:icon="@drawable/ic_more"
+		android:id="@+id/ACTION_MORE"
+		android:title="More"
+		android:showAsAction="always" >
+		<menu>
+			<item
+				android:id="@+id/ACTION_NEWCHECKLIST"
+				android:title="New checklist"/>
+			<item
+				android:id="@+id/ACTION_SETTINGS"
+				android:title="Settings"/>
+			<item
+				android:id="@+id/ACTION_ABOUT"
+				android:title="About"/>
+			<item
+				android:id="@+id/ACTION_EXIT"
+				android:title="Exit"/>
+		</menu>
+    </item>
+</menu>

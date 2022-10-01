@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width= "match_parent"
+	android:layout_height= "wrap_content"
+	android:paddingRight="10dp"
+	android:paddingLeft="10dp"
+	android:background="@drawable/catlist_selector"
+	android:orientation="vertical">
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+	<TextView
+		android:id ="@+id/ntitle"
+		android:layout_width= "wrap_content"
+		android:layout_height= "wrap_content"
+		android:singleLine="true"
+	    android:textColor="#000000"
+		android:paddingTop="6dp"
+		android:paddingBottom="0dp"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textStyle="bold"
+		android:gravity= "center_vertical" />
+		<TextView
+			android:id ="@+id/nDate"
+			android:layout_width= "match_parent"
+			android:layout_height= "wrap_content"
+			android:textColor="#818181"
+			android:layout_alignParentRight="true"
+			android:singleLine="true"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:gravity= "center_vertical|right" />
+	</LinearLayout>
+	<TextView
+		android:id ="@+id/nDescription"
+		android:layout_width= "match_parent"
+		android:layout_height= "wrap_content"
+	    android:layout_below="@+id/ntitle"
+		android:textColor="#bb000000"
+		android:singleLine="true"
+		android:paddingTop="3dp"
+		android:paddingBottom="7dp"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity= "center_vertical" />
+	
+</LinearLayout>

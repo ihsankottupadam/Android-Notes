@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width= "match_parent"
+	android:layout_height= "48dp"
+	android:gravity="center_vertical"
+	android:background="@drawable/catlist_selector">
+	<ImageView
+		android:id ="@+id/icon"
+		android:layout_width= "32dp"
+		android:layout_height= "32dp"
+		android:layout_alignParentLeft= "true"
+		android:layout_marginLeft= "14dp"
+		android:layout_marginRight= "25dp"
+		android:src= "@drawable/ic_cat_broun"
+		android:layout_centerVertical= "true"
+	/>
+	<TextView
+		android:id ="@+id/title"
+		android:text="Songs"
+		android:layout_width= "wrap_content"
+		android:layout_height= "match_parent"
+		android:layout_toRightOf= "@id/icon"
+		android:textSize="20dp"
+		android:singleLine="true"
+		android:layout_toLeftOf="@+id/btnRenameCat"
+		android:minHeight= "?android:attr/listPreferredItemHeightSmall"
+		android:textColor="#000000"
+		android:gravity= "center_vertical" />
+	<ImageButton
+		android:id ="@+id/btnDeleteCat"
+		android:layout_width = "36dp"
+		android:layout_height ="36dp"
+		android:layout_marginRight="8dp"
+		android:gravity="center"
+		android:src="@drawable/ic_delete"
+		android:background = "@drawable/circular_button_selector"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+       android:onClick ="DeleteCat"
+		android:scaleType="centerInside"
+	/>
+	<ImageButton
+		android:id ="@+id/btnRenameCat"
+		android:layout_width = "36dp"
+		android:layout_height ="36dp"
+	    android:layout_marginRight="10dp"
+		android:gravity="center"
+		android:src="@drawable/ic_edit"
+		android:background = "@drawable/circular_button_selector"
+		android:layout_toLeftOf="@+id/btnDeleteCat"
+		android:layout_centerVertical="true"
+		android:onClick ="RenameCat"
+		android:scaleType="centerInside"
+	/>
+</RelativeLayout>

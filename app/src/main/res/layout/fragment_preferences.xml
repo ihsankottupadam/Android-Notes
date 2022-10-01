@@ -1,0 +1,29 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#EAEAEA">
+	<ListView
+		android:id="@+id/list1"
+		android:layout_below="@+id/mActionBar"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		/>
+	
+	<LinearLayout
+		android:id="@+id/fragment_emtytxtlayout"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:gravity="center">
+		<TextView
+			android:id="@+id/emtytext"
+			android:text="No notes"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textStyle="bold"
+			android:textColor="#BCBCBC"
+          android:gravity="center"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+			
+	</LinearLayout>
+</RelativeLayout>

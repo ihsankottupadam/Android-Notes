@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ACTION_STAR"
+        android:title="Star"
+		android:showAsAction="always"/>
+    <item
+        android:id="@+id/ACTION_CLIP"
+        android:title="Copy to clipboard"
+		android:showAsAction="always"/>
+	<item
+        android:id="@+id/ACTION_SEARCH"
+        android:title="Search"
+		android:showAsAction="always"/>
+    
+</menu>

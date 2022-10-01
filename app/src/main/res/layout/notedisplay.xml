@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+	<ScrollView
+		android:id="@+id/notedisplayScroll"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scrollbarSize="5dp"
+		android:scrollbarStyle="insideOverlay"
+		android:padding="2dp"
+		android:scrollbars="vertical"
+		android:orientation="vertical"
+	>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="0dp"
+			android:orientation="vertical">
+		    <EditText
+				android:id="@+id/note_tite"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textStyle="bold"
+				android:singleLine="true"
+				android:hint="No title"
+				android:textColorHighlight="#44009688"
+				android:textCursorDrawable="@drawable/cursor"
+			    android:maxLength="22"
+				android:focusable="false"
+				android:textColor="#000000"
+				android:background="#00000000"/>
+			<TextView
+				android:id="@+id/note_maintext"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text=""
+				android:gravity="top|left"
+				android:padding="8dp"
+				android:minHeight="200dp"
+				android:autoLink = "all"
+				android:linksClickable = "true"
+				android:textIsSelectable="true"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="#000000"
+				android:background="#00000000"
+			/>
+		<ListView
+			android:id="@+id/checklist"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:dividerHeight="1dp"
+			android:background="#ffffff"
+			android:listSelector= "@drawable/catlist_selector"
+			/>
+		<LinearLayout
+			android:id="@+id/checkDiv"
+			android:layout_width="fill_parent"
+			android:layout_height="1dp"
+			android:background="#e5e5e5"/>
+		<LinearLayout
+			android:id="@+id/linear_itemAdd"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:background="#ffffff"
+		    android:gravity="center_vertical">
+			<ImageView
+				android:id="@+id/itemadd_plus"
+				android:layout_height="35dp"
+				android:layout_width="35dp"
+				android:src="@drawable/ic_add_broun"
+				android:layout_marginLeft="11dp"/>
+			<EditText
+				android:id="@+id/itemaddtext"
+				android:layout_height="40dp"
+				android:layout_width="match_parent"
+				android:gravity="center_vertical"
+				android:hint="Add item"
+				android:layout_marginLeft="8dp"
+				android:textSize="18sp"
+				android:layout_marginRight="44dp"
+				android:background="#ffffff"
+				android:singleLine="true"
+				android:textColorHighlight="#44009688"
+				android:textCursorDrawable="@drawable/cursor"
+				android:imeOptions="actionDone"/>
+			<ImageButton
+				android:id ="@+id/btnResetItem"
+				android:layout_width = "36dp"
+				android:layout_height ="36dp"
+				android:layout_marginRight="8dp"
+				android:layout_marginLeft="-44dp"
+				android:gravity="center"
+				android:visibility="gone"
+				android:src="@drawable/ic_close_black"
+				android:background = "@drawable/circular_button_selector"
+				android:onClick ="resetAddText"
+				android:scaleType="fitXY"
+			/>
+		</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

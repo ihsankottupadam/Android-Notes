@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/catlist_selector"
+	android:layout_width="fill_parent"
+	android:descendantFocusability= "blocksDescendants"
+	android:layout_height="wrap_content" android:minHeight="40.0dip">
+	<View
+		android:id="@+id/viewTop"
+		android:layout_width="6.0dip"
+		android:layout_height="0.0dip" 
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true" />
+	<View 
+		android:id="@+id/viewBottom" 
+		android:layout_width="6.0dip" 
+		android:layout_height="0.0dip" 
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true" />
+	<LinearLayout
+		android:id="@+id/lay_imp" 
+		android:background="#ffdedede"
+		android:layout_width="6.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:minHeight="40.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="setstar" />
+	<CheckBox
+		android:id="@+id/check_itemCheckBox"
+		android:clickable="false"
+		android:layout_width="33.0dip"
+		android:layout_height="33.0dip"
+		android:button="@drawable/abs_checkbox_selector"
+		android:scaleType="fitXY"
+		android:layout_weight="1.0"
+		android:layout_toRightOf="@id/lay_imp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentBottom="true"
+		android:layout_centerVertical="true" />
+	<TextView
+		android:textSize="18.0sp"
+		android:textColor="#ff000000"
+		android:gravity="center_vertical"
+		android:id="@+id/check_title"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:layout_marginLeft="8.0dip"
+		android:text="Ihsan"
+		android:singleLine="false"
+		android:layout_toLeftOf="@+id/btnMore"
+		android:layout_toRightOf="@id/check_itemCheckBox"
+		android:layout_centerVertical="true" android:selectable="false" />
+	<ImageButton
+		android:gravity="center"
+		android:id="@+id/btnDeleteItem"
+		android:background="@drawable/circular_button_selector"
+		android:layout_width="36.0dip"
+		android:layout_height="36.0dip"
+		android:layout_marginRight="8.0dip"
+		android:src="@drawable/ic_close_black"
+		android:scaleType="fitXY"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:onClick="removeCheckItem" />
+	<ImageButton
+		android:gravity="center"
+		android:id="@+id/btnMore"
+		android:background="@drawable/circular_button_selector"
+		android:layout_width="36.0dip"
+		android:layout_height="36.0dip"
+		android:layout_marginRight="54.0dip"
+		android:src="@drawable/ic_more_gray"
+		android:scaleType="fitXY"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:onClick="showMenu" />
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+		<item name="android:actionBarStyle">@style/myTheme.ActionBar</item> 
+		<item name= "android:actionMenuTextColor" >#ffffff</item>
+		<item name="android:actionBarItemBackground">@drawable/button_box_light_selector</item>
+		<item name="android:homeAsUpIndicator">@drawable/ic_back_white</item>
+		<item name="android:actionModeStyle">@style/CustomActionModeStyle</item>
+		<item name= "android:actionModeCloseDrawable" >@drawable/ic_done_white</item>
+		<item name= "android:actionModeCopyDrawable" >@drawable/abc_ic_menu_copy_mtrl_am_alpha</item>
+		<item name= "android:actionModeCutDrawable" >@drawable/abc_ic_menu_cut_mtrl_alpha</item>
+		<item name= "android:actionModePasteDrawable" >@drawable/abc_ic_menu_paste_mtrl_am_alpha</item>
+		<item name= "android:actionModeSelectAllDrawable" >@drawable/abc_ic_menu_selectall_mtrl_alpha</item>
+		
+    </style>
+	<style name="FullScreen" parent="android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+    </style>
+	<style name="myTheme.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+		<item name="android:background">#EF6C00</item>
+		<item name="android:titleTextStyle">@style/myTheme.ActionBar.Text</item>
+		<item name="android:displayOptions">showTitle</item>
+		
+	</style>
+	<style name="myTheme.ActionBar.Text" parent="@android:style/TextAppearance">
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name ="MyApp.PopupMenu"
+		parent ="android:Widget.Holo.Light.ListPopupWindow" >
+        <item name= "android:popupBackground" >@drawable/menu_dropdown_panel</item>
+		<item name= "android:divider" >#00000000</item>
+        <item name= "android:dividerHeight" > 0dp </item>
+	</style>
+	<style name="CustomActionModeStyle" parent="@android:style/Widget.Holo.Light.ActionMode">
+        <item name="android:background">#EF6C00</item>
+        <item name="android:titleTextStyle">@style/myTheme.ActionBar.Text</item>
+	</style>
+	<style name="FontSmall" parent="@android:style/TextAppearance.Small">
+		<item name="android:textSize">14sp</item>
+	</style>
+	<style name="FontMedium" parent="@android:style/TextAppearance.Medium">
+		<item name="android:textSize">18sp</item>
+	</style>
+	<style name="FontLarge" parent="@android:style/TextAppearance.Large">
+		<item name="android:textSize">22sp</item>
+	</style>
+	<style name="FontExtraLarge" parent="@android:style/TextAppearance.Large">
+		<item name="android:textSize">26sp</item>
+	</style>
+</resources>

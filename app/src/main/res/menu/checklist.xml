@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	<item
+		android:icon="@drawable/ic_more"
+		android:id="@+id/ACTION_MORE"
+		android:title="More"
+		android:showAsAction="always" >
+		<menu>
+			<item
+				android:id="@+id/ACTION_TONOTE"
+				android:title="Convert to text note"/>
+			<item
+				android:id="@+id/ACTION_DEL_LIST"
+				android:title="Delete"/>
+			<item
+				android:id="@+id/ACTION_DEL_SEL_LIST"
+				android:title="Delete checked"/>
+			<item
+				android:id="@+id/ACTION_SHARE_LIST"
+				android:title="Share checklist"/>
+		</menu>
+    </item>
+</menu>

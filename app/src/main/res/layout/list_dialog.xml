@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android ="http://schemas.android.com/apk/res/android"
+android:orientation = "vertical"
+android:layout_width = "wrap_content"
+android:layout_height ="wrap_content"
+android:gravity ="center_vertical|center_horizontal">
+<RelativeLayout
+android:layout_width = "fill_parent"
+android:layout_height ="wrap_content">
+	<TextView
+		android:text="Move to"
+		android:id="@+id/dialog_title"
+		android:padding="17dp"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textStyle="bold"
+		textcolor="#000000"/>
+	<ListView
+		android:id= "@+id/list"
+		android:layout_width="match_parent"
+		android:layout_height= "wrap_content"
+		android:maxHeight="250dp"
+		android:choiceMode= "singleChoice"
+		android:listSelector= "@drawable/catlist_selector" 
+		android:dividerHeight="0dp"
+		android:layout_below="@+id/dialog_title"
+		android:background="#ffffff"
+		android:layout_marginTop= "2dp"
+		android:layout_marginBottom= "45dp"/>
+	<LinearLayout
+		android:id="@+id/dialogLinearbtns"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="3dp"
+		android:layout_below="@+id/list"
+		android:paddingLeft="3dp"
+		android:layout_marginTop="-42dp"
+		android:gravity="right">
+		<Button
+			android:id="@+id/dialog_cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=" CANCEL "
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:padding="5dp"
+			android:textStyle="bold"
+			android:background="@drawable/button_box_dark_selector"
+			android:textColor="#009688"
+		/>
+		<Button
+			android:id="@+id/dialog_ok"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="OK"
+			android:layout_marginLeft="5dp"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:padding="5dp"
+			android:textStyle="bold"
+			android:background="@drawable/button_box_dark_selector"
+			android:textColor="#009688"
+		/>
+	</LinearLayout>
+</RelativeLayout>
+</LinearLayout>

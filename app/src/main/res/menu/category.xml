@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item
+		android:icon="@drawable/ic_plus"
+		android:id="@+id/action_add"
+		android:title="add"
+		android:showAsAction="always" />
+</menu>

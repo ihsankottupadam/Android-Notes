@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+	android:layout_width= "match_parent"
+	android:layout_height= "48dp"
+	android:background= "@drawable/catlist_selector" >
+<ImageView
+    android:id ="@+id/icon"
+	android:layout_width= "23dp"
+	android:layout_height= "23dp"
+	android:layout_alignParentLeft= "true"
+	android:layout_marginLeft= "14dp"
+	android:layout_marginRight= "25dp"
+	android:src= "@drawable/ic_launcher"
+	android:layout_centerVertical= "true"
+/>
+<TextView
+    android:id ="@+id/title"
+	android:layout_width= "wrap_content"
+	android:layout_height= "match_parent"
+	android:layout_toRightOf= "@id/icon"
+	android:layout_toLeftOf="@+id/subTitle"
+    android:textSize="15dp"
+	android:singleLine="true"
+	android:minHeight= "?android:attr/listPreferredItemHeightSmall"
+	android:textColor="@drawable/catlist_text_selector"
+	android:gravity= "center_vertical" />
+<TextView 
+	android:id ="@+id/subTitle"
+	android:layout_width= "wrap_content"
+	android:layout_height= "match_parent"
+	android:textSize="14dp"
+	android:singleLine="true"
+	android:textColor="@drawable/catlist_text_selector"
+	android:layout_centerVertical="true"
+	android:gravity="center_vertical"
+	android:layout_alignParentRight="true"
+	android:paddingRight="15dp"
+	android:paddingLeft="15dp"/>
+</RelativeLayout>

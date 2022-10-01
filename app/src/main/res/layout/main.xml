@@ -1,0 +1,105 @@
+<android.support.v4.widget.DrawerLayout
+xmlns:android= "http://schemas.android.com/apk/res/android"
+android:id= "@+id/drawerLayout"
+android:layout_width= "match_parent"
+android:layout_height= "match_parent" 
+android:fitsSystemWindows = "true">
+<!-- The main content view -->
+<include
+	layout="@layout/fragment_preferences"
+		android:layout_width = "match_parent"
+		android:layout_height ="match_parent" />
+<!-- The navigation drawer -->
+<RelativeLayout
+android:layout_width= "280dp"
+android:layout_height= "match_parent"
+android:id= "@+id/drawerPane"
+android:background="#ffffff"
+android:fitsSystemWindows = "true"
+android:layout_gravity= "start" >
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:scrollbars="vertical"
+		android:padding="0dp">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="0dp"
+			android:orientation="vertical">
+<!-- Profile Box -->
+<RelativeLayout
+android:id= "@+id/profileBox"
+android:layout_width= "match_parent"
+android:layout_height= "100dp"
+android:background= "#1A3A4B"
+android:padding= "8dp" >
+<ImageView
+	android:id= "@+id/avatar"
+android:layout_width= "50dp"
+android:layout_height= "50dp"
+android:src= "@drawable/ic_launcher"
+android:layout_marginTop= "15dp" />
+<LinearLayout
+android:layout_width= "wrap_content"
+android:layout_height= "42dp"
+android:layout_centerVertical= "true"
+android:layout_marginLeft= "15dp"
+android:layout_toRightOf= "@+id/avatar"
+android:orientation= "vertical" >
+<TextView
+android:id= "@+id/DName"
+android:layout_width= "wrap_content"
+android:layout_height= "wrap_content"
+android:text= "Notes"
+android:textColor= "#fff"
+android:textSize= "16sp"
+android:textStyle= "bold" />
+<TextView
+android:id= "@+id/devN"
+android:layout_width= "wrap_content"
+android:layout_height= "wrap_content"
+android:layout_gravity= "bottom"
+android:layout_marginTop= "4dp"
+android:text= "Developed by Ihsan kottupadam"
+android:textColor= "#fff"
+android:textSize= "13sp" />
+</LinearLayout>
+</RelativeLayout>
+<!-- List of Actions (pages) -->
+<LinearLayout
+	android:layout_width="280dp"
+	android:layout_height="fill_parent"
+	android:layout_below="@+id/profileBox"
+	android:orientation="vertical">
+<ListView
+android:id= "@+id/navList"
+android:layout_width= "280dp"
+android:layout_height="wrap_content"
+android:choiceMode= "singleChoice"
+android:dividerHeight="0dp"
+android:layout_marginTop="5dp"
+android:divider="#00000000"
+android:background="#ffffff"
+android:listSelector= "@drawable/catlist_selector" />
+	<RelativeLayout
+		android:id="@+id/listdivr"
+		android:layout_height="2dp"
+		android:layout_width="280dp"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:background="#fff1f1f1"/>
+	<ListView
+		android:id= "@+id/prefList"
+		android:layout_width= "280dp"
+		android:layout_height ="wrap_content"
+		android:dividerHeight="0dp"
+		android:divider="#00000000"
+		android:background="#ffffff"
+		android:listSelector= "@drawable/catlist_selector" />
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

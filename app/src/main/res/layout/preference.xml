@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="Settings"
+	>
+	<PreferenceScreen android:icon="@drawable/ic_pref_general" android:title="General" android:key="General">
+		<CheckBoxPreference android:title="One tap edit" android:key="isTouchToEdit" android:summary="Tap the note text to start editing" android:defaultValue="true" />
+		<CheckBoxPreference android:title="Focus content first" android:key="isFocusContent" android:summary="Focus content on editing" android:defaultValue="false" />
+	    <ListPreference
+			android:key="textSize"
+			android:title="Font size"
+			android:dialogTitle="Font size"
+			android:entries="@array/TextSizes"
+			android:entryValues="@array/TextSizes"
+			android:summary="%s"
+			android:defaultValue="Medium (Default)"/>
+	</PreferenceScreen>
+	<PreferenceScreen android:icon="@drawable/ic_pref_lock" android:title="Lock" android:key="lock">
+		<Preference android:title="Set password" android:key="Set_password" />
+		<Preference android:title="Change password" android:key="Change_password" />
+		<Preference android:title="Disable password" android:key="Disable_password" />
+		<ListPreference
+			android:key="lockWallpaper"
+			android:title="Lock screen wallpaper"
+			android:entries="@array/wallmethod"
+			android:entryValues="@array/wallmethod"
+			android:defaultValue="Default"/>
+	</PreferenceScreen>
+	<PreferenceScreen android:icon="@drawable/ic_pref_about" android:title="About" android:key="about">
+	</PreferenceScreen>
+</PreferenceScreen>
